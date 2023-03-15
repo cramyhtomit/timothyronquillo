@@ -3,6 +3,7 @@
 :root {
     --headerFont: 'Montserrat', sans-serif;
     --textFont: 'JetBrains Mono', monospace;
+    --fontColor: #FFFFF;
 }
 
 
@@ -16,3 +17,15 @@ h1 {
     font-family: var(--headerFont);
 }
 
+.material-symbols-outlined {
+    transition: transform .3s ease-in-out;
+}
+
+.material-symbols-outlined:hover {
+    transform: translateY(-25px) scale(2.5);
+}
+
+a {
+    text-decoration: none;
+    color: var(--textFont);
+}
