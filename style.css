@@ -3,7 +3,8 @@
 :root {
     --headerFont: 'Montserrat', sans-serif;
     --textFont: 'JetBrains Mono', monospace;
-    --fontColor: #FFFFF;
+    --fontColor: #FFFFFF;
+    --accentColorChange: #F24C4C;
     --accentColor: #3A98B9;
 }
 
@@ -24,39 +25,86 @@ ul {
 }
 
 li {
-    line-height: 1;
+    line-height: .9;
 }
 
+ul:hover {
+    cursor: default;
+}
+
+
+/* tim ronquillo */
 li:nth-child(1){
     font-size: 75px;
+    margin-bottom: 8px;
+    color: var(--fontColor);
 }
 
+/* video editing */
 li:nth-child(2){
     font-size: 72px;
     color: var(--accentColor);
+    transition: color .5s ease;
 }
+/* li:nth-child(2):hover{
+    color: var(--accentColorChange);
+    cursor: default;
+} */
 
+
+
+/* cooking now */
 li:nth-child(3){
-    font-size: 50px;
+    font-size: 37px;
+    color: var(--fontColor);
 }
 
+/* wordpress websites */
 li:nth-child(4){
+    font-size: 47px;
+    color: var(--accentColor);
+}
+
+/* graphics */
+li:nth-child(5){
     font-size: 110px;
     color: var(--accentColor);
+    margin-bottom: 10px;
 }
 
-li:nth-child(5){
-    font-size: 68px;
+/* re-reding book */
+li:nth-child(6){
+    font-size: 40px;
+    color: var(--fontColor);
+}
+
+/* product photography */
+li:nth-child(7){
+    font-size: 43px;
     color: var(--accentColor);
+}
+
+/* front-end */
+li:nth-child(8){
+    font-size: 100px;
+    color: var(--accentColor);
+}
+
+/* spreadsheet */
+li:nth-child(9){
+    font-size: 38px;
+    color: var(--accentColor);
+}
+
+/* say hi! */
+li:nth-child(10){
+    font-size: 140px;
+    color: var(--fontColor);
 }
 
 .material-symbols-outlined {
     transition: transform .3s ease-in-out, opacity .2s ease-in-out;
 }
-
-/* .material-symbols-outlined:hover {
-    transform: translateY(-25px) scale(2.5);
-} */
 
 a {
     text-decoration: none;
@@ -70,5 +118,5 @@ a {
 }
 
 #about > h1 {
-    margin-bottom: 0;
+    margin-bottom: -10px;
 }
