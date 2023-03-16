@@ -18,19 +18,19 @@ h1 {
 }
 
 .material-symbols-outlined {
-    /* transition: transform .3s ease-in-out; */
+    transition: transform .3s ease-in-out, opacity .2s ease-in-out;
 }
 
-.material-symbols-outlined:hover {
+/* .material-symbols-outlined:hover {
     transform: translateY(-25px) scale(2.5);
-}
+} */
 
 a {
     text-decoration: none;
     color: var(--textFont);
 }
 
-#arrow {
-    opacity: 1;
-    transition: opacity .5s ease-in-out;
+#imAnIntrovert {
+    opacity: 0;
+    transition: opacity .5s ease-in 1s;
 }
