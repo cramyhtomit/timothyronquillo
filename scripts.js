@@ -15,17 +15,20 @@ window.addEventListener('scroll', function(){
 
 
 var listItem = document.querySelectorAll('li');
+var white = "rgb(255, 255, 255)";
+var red = "rgb(233, 100, 121";
+var blue = "rgb(58, 152, 185)";
 for ( i = 0; i < listItem.length; i++){
 
     listItem[i].addEventListener('mouseover', function() {
 
         var colorValue = window.getComputedStyle(this).getPropertyValue('color');
-        if (colorValue == "rgb(255, 255, 255)"){
-            this.style.color = "rgb(242, 76, 76)";
-        } else if (colorValue == "rgb(58, 152, 185)"){
-            this.style.color = "rgb(255, 255, 255)";
+        if (colorValue == white){
+            this.style.color = red;
+        } else if (colorValue == blue){
+            this.style.color = white;
         } else {
-            this.style.color = "rgb(58, 152, 185)";
+            this.style.color = blue;
         }
 
     });
