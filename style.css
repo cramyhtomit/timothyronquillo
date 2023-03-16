@@ -4,6 +4,7 @@
     --headerFont: 'Montserrat', sans-serif;
     --textFont: 'JetBrains Mono', monospace;
     --fontColor: #FFFFF;
+    --accentColor: #3A98B9;
 }
 
 
@@ -15,6 +16,38 @@ p {
 
 h1 {
     font-family: var(--headerFont);
+}
+
+ul {
+    list-style: none;
+    font-family: var(--headerFont);
+}
+
+li {
+    line-height: 1;
+}
+
+li:nth-child(1){
+    font-size: 75px;
+}
+
+li:nth-child(2){
+    font-size: 72px;
+    color: var(--accentColor);
+}
+
+li:nth-child(3){
+    font-size: 50px;
+}
+
+li:nth-child(4){
+    font-size: 110px;
+    color: var(--accentColor);
+}
+
+li:nth-child(5){
+    font-size: 68px;
+    color: var(--accentColor);
 }
 
 .material-symbols-outlined {
@@ -31,6 +64,11 @@ a {
 }
 
 #imAnIntrovert {
+    font-size: 10px;
     opacity: 0;
     transition: opacity .5s ease-in 1s;
+}
+
+#about > h1 {
+    margin-bottom: 0;
 }
