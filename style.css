@@ -112,7 +112,7 @@ a {
 }
 
 #imAnIntrovert {
-    font-size: 10px;
+    font-size: 20px;
     opacity: 0;
     transition: opacity .5s ease-in 1s;
 }
