@@ -1,16 +1,20 @@
 window.addEventListener('scroll', function(){
     const scrolled = window.scrollY;
     if (scrolled >= 100){
-        this.document.getElementById('arrow').style.opacity = "0";
-        this.document.getElementById('arrow').style.transform = "scale(5)";
-    }else{
-        this.document.getElementById('arrow').style.opacity = "1";
-        this.document.getElementById('arrow').style.transform = "scale(1)";
+        document.getElementById('panda').style.transform = 'translateY(100px)';
+        document.getElementById('panda').style.opacity = 0;
+        document.getElementById('panda').style.transition = 'transform .1s ease, opacity .1s ease';
     }
-    if (scrolled >= 900){
-        this.document.getElementById('imAnIntrovert').style.opacity = "1";
-    } 
 });
+
+
+document.getElementById('panda').addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(100px)';
+    this.style.opacity = 0;
+    this.style.transition = 'transform .3s ease, opacity .5s ease';
+
+});
+
 
 
 

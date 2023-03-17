@@ -3,7 +3,7 @@
 :root {
     --headerFont: 'Montserrat', sans-serif;
     --textFont: 'JetBrains Mono', monospace;
-    --fontColor: #FFFFFF;
+    --fontColor: black;
     --accentColorChange: #F24C4C;
     --accentColor: #3A98B9;
 
@@ -119,7 +119,13 @@ li:nth-child(10){
 
 
 
+#panda {
+    transition: transform .1s ease;
+}
 
+#panda:hover {
+    transform: translateY(100px);
+}
 
 
 
