@@ -1,6 +1,6 @@
 
 document.getElementById('pandaDown').addEventListener('mouseenter', function() {
-    this.style.transform = 'translateY(-100px)';
+    this.style.transform = 'translateY(100px)';
     this.style.transition = 'transform .5s ease';
 
     document.getElementById('me').style.opacity = 0;
@@ -18,6 +18,21 @@ document.getElementById('pandaDown').addEventListener('mousedown', function() {
 
     document.getElementById('imAnIntrovert').style.opacity = 1;
 });
+
+
+
+document.getElementById('pandaUp').addEventListener('mouseenter', function() {
+    this.style.transform = 'translateY(-100px)';
+    this.style.transition = 'transform .5s ease';
+
+});
+
+document.getElementById('pandaUp').addEventListener('mousedown', function() {
+    this.style.transform = 'translateY(-100px)';
+    this.style.transition = 'transform .5s ease';
+
+});
+
 
 
 
@@ -54,11 +69,22 @@ window.onload = function() {
 
 var count = 0;
 let intervalID = setInterval(function(){     
-    document.getElementById('pandaDown').style.transform = 'translateY(0px)';
+    randomKulit();
     count++;
     console.log(count);
-    if (count > 3){
-        clearInterval(intervalID);
-    }
-}, Math.floor(Math.random() * 7000) + 4000);   
+    // if (count > 3){
+    //     clearInterval(intervalID);
+    // }
+}, Math.floor(Math.random() * 3000) + 1000);   
 
+
+
+function randomKulit(){
+    var pandaSwitch = Math.floor(Math.random() * 2) * 1;
+    if (pandaSwitch == 1){
+        document.getElementById('pandaDown').style.transform = 'translateY(0px)';
+    } else {
+        document.getElementById('pandaUp').style.transform = 'translateY(0px)';
+    }
+    alert(pandaSwitch);
+}
