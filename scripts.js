@@ -1,6 +1,6 @@
 
 document.getElementById('pandaDown').addEventListener('mouseenter', function() {
-    this.style.transform = 'translateY(100px)';
+    this.style.transform = 'translateY(-100px)';
     this.style.transition = 'transform .5s ease';
 
     document.getElementById('me').style.opacity = 0;
