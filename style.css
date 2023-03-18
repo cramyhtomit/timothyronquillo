@@ -20,7 +20,7 @@
     --sayHi: 7.5rem;
 
     /* Less Than 1320px Size */
-    --scaleBelow600: 0.5;
+    --scaleBelow600: 0.3;
     
     /* font-size: 40px; */
 }
