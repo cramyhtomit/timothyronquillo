@@ -1,18 +1,27 @@
-window.addEventListener('scroll', function(){
-    const scrolled = window.scrollY;
-    if (scrolled >= 100){
-        document.getElementById('panda').style.transform = 'translateY(100px)';
-        document.getElementById('panda').style.opacity = 0;
-        document.getElementById('panda').style.transition = 'transform .1s ease, opacity .1s ease';
-    }
-});
+// window.addEventListener('scroll', function(){
+//     const scrolled = window.scrollY;
+//     // if (scrolled >= 10){
+//     //     // this.document.getElementById('panda').style.position = 'fixed';
+//     //     // document.getElementById('panda').style.transform = 'translateY(1000px)';
+//     //     // document.getElementById('panda').style.opacity = 0;
+//     //     // document.getElementById('panda').style.transition = 'transform 1s ease';
+//     // }
+
+//     if (scrolled >= 900) {
+//         this.document.getElementById('imAnIntrovert').style.opacity = 1;
+//     }
+// });
 
 
-document.getElementById('panda').addEventListener('mouseenter', function() {
+document.getElementById('pandaDown').addEventListener('mouseenter', function() {
     this.style.transform = 'translateY(100px)';
-    this.style.opacity = 0;
-    this.style.transition = 'transform .3s ease, opacity .5s ease';
+    // this.style.display = 'none';
+    this.style.transition = 'transform .5s ease';
 
+    document.getElementById('me').style.opacity = 0;
+    document.getElementById('about').style.opacity = 1;
+
+    document.getElementById('imAnIntrovert').style.opacity = 1;
 });
 
 
@@ -25,18 +34,25 @@ var blue = "rgb(58, 152, 185)";
 for ( i = 0; i < listItem.length; i++){
 
     listItem[i].addEventListener('mouseover', function() {
-
-        var colorValue = window.getComputedStyle(this).getPropertyValue('color');
-        if (colorValue == white){
-            this.style.color = red;
-        } else if (colorValue == blue){
-            this.style.color = white;
-        } else {
-            this.style.color = blue;
-        }
-
+        
+            if (document.getElementById('about').style.opacity == 1){
+                var colorValue = window.getComputedStyle(this).getPropertyValue('color');
+                if (colorValue == white){
+                    this.style.color = red;
+                } else if (colorValue == blue){
+                    this.style.color = white;
+                } else {
+                    this.style.color = blue;
+                }
+            }
+      
     });
 
 }
 
 
+window.onload = function() {
+    setTimeout(function() {
+        document.getElementById('pandaDown').style.transform = 'translateY(0px)';               
+    }, 2000);
+}

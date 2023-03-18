@@ -3,20 +3,20 @@
 :root {
     --headerFont: 'Montserrat', sans-serif;
     --textFont: 'JetBrains Mono', monospace;
-    --fontColor: black;
+    --fontColor: #FFFFF;
     --accentColorChange: #F24C4C;
     --accentColor: #3A98B9;
 
-    --timronquillo: 3.1rem;
-    --videoEditing: 3rem;
-    --cooking: 1.55rem;
-    --wordpress: 2rem;
-    --graphics: 4.7rem;
-    --streetLawyer: 1.5rem;
-    --productPhotog: 1.85rem;
-    --frontEnd: 4.2rem;
-    --spreadSheet: 1.6rem;
-    --sayHi: 5.9rem;
+    --timronquillo: 4.1rem;
+    --videoEditing: 4rem;
+    --cooking: 2.05rem;
+    --wordpress: 2.6rem;
+    --graphics: 6rem;
+    --streetLawyer: 2rem;
+    --productPhotog: 2.35rem;
+    --frontEnd: 5.4rem;
+    --spreadSheet: 2.05rem;
+    --sayHi: 7.5rem;
     
     /* font-size: 40px; */
 }
@@ -119,22 +119,12 @@ li:nth-child(10){
 
 
 
-#panda {
-    transition: transform .1s ease;
-}
-
-#panda:hover {
-    transform: translateY(100px);
-}
 
 
-
-
-
-
+/* 
 .material-symbols-outlined {
     transition: transform .3s ease-in-out, opacity .2s ease-in-out;
-}
+} */
 
 a {
     text-decoration: none;
@@ -144,14 +134,46 @@ a {
 #imAnIntrovert {
     font-size: 20px;
     opacity: 0;
-    transition: opacity .5s ease-in 1s;
-}
-
-#about > h1 {
-    margin-bottom: -10px;
+    transition: opacity .5s ease-in 1.5s;
 }
 
 
+#about {
+    transition: opacity .5s ease-in-out .5s;
+    z-index: 2;
+    opacity: 0;
+}
+
+#me {
+    transition: opacity .5s ease-in-out;
+    z-index: 1;
+}
 
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+section {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
 
+}
+
+#pandasectionDown {
+    z-index: 3;
+    overflow: hidden;
+}
+
+#pandaDown {
+    transition: transform 1.5s ease; 
+    transform: translateY(100px);
+    /* display: none; */
+}
