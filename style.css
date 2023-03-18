@@ -181,6 +181,120 @@ li:nth-child(10){
 }
 
 
+@media only screen and (max-width: 1340px){
+
+    /* tim ronquillo */
+    li:nth-child(1){
+       font-size: calc(var(--timronquillo) * var(--scaleBelow1340));
+       margin-bottom: 5px;
+   }
+   
+   /* video editing */
+   li:nth-child(2){
+       font-size: calc(var(--videoEditing) * var(--scaleBelow1340));
+   }
+   
+   /* cooking now */
+   li:nth-child(3){
+       font-size: calc(var(--cooking) * var(--scaleBelow1340));
+   }
+   
+   /* wordpress websites */
+   li:nth-child(4){
+       font-size: calc(var(--wordpress) * var(--scaleBelow1340));
+   }
+   
+   /* graphics */
+   li:nth-child(5){
+       font-size: calc(var(--graphics) * var(--scaleBelow1340));
+   }
+   
+   /* re-reding book */
+   li:nth-child(6){
+       font-size: calc(var(--streetLawyer) * var(--scaleBelow1340));
+   }
+   
+   
+   /* product photography */
+   li:nth-child(7){
+       font-size: calc(var(--productPhotog) * var(--scaleBelow1340));
+   }
+   
+   /* front-end */
+   li:nth-child(8){
+       font-size: calc(var(--frontEnd) * var(--scaleBelow1340));
+       margin-bottom: 1px;
+   }
+   
+   /* spreadsheet */
+   li:nth-child(9){
+       font-size: calc(var(--spreadSheet) * var(--scaleBelow1340));
+   }
+   
+   /* say hi! */
+   li:nth-child(10){
+       font-size: calc(var(--sayHi) * var(--scaleBelow1340));
+   }
+   
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 957px) {
+    /* tim ronquillo */
+    li:nth-child(1){
+      font-size: calc(var(--timronquillo) * var(--scaleBelow850));
+  }
+  
+  /* video editing */
+  li:nth-child(2){
+      font-size: calc(var(--videoEditing) * var(--scaleBelow850));
+  }
+  
+  /* cooking now */
+  li:nth-child(3){
+      font-size: calc(var(--cooking) * var(--scaleBelow850));
+  }
+  
+  /* wordpress websites */
+  li:nth-child(4){
+      font-size: calc(var(--wordpress) * var(--scaleBelow850));
+
+  }
+  
+  /* graphics */
+  li:nth-child(5){
+      font-size: calc(var(--graphics) * var(--scaleBelow850));
+  }
+  
+  /* re-reding book */
+  li:nth-child(6){
+      font-size: calc(var(--streetLawyer) * var(--scaleBelow850));
+  }
+  
+  
+  /* product photography */
+  li:nth-child(7){
+      font-size: calc(var(--productPhotog) * var(--scaleBelow850));
+
+  }
+  
+  /* front-end */
+  li:nth-child(8){
+      font-size: calc(var(--frontEnd) * var(--scaleBelow850));
+  }
+  
+  /* spreadsheet */
+  li:nth-child(9){
+      font-size: calc(var(--spreadSheet) * var(--scaleBelow850));
+  }
+  
+  /* say hi! */
+  li:nth-child(10){
+      font-size: calc(var(--sayHi) * var(--scaleBelow850));
+  }
+  
+  
+  }
 
 
 @media (max-width: 800px){
@@ -198,144 +312,7 @@ li:nth-child(10){
 }
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 957px) {
-    /* tim ronquillo */
-    li:nth-child(1){
-      font-size: calc(var(--timronquillo) * var(--scaleBelow850));
-      margin-bottom: 8px;
-      color: var(--fontColor);
-  }
-  
-  /* video editing */
-  li:nth-child(2){
-      font-size: calc(var(--videoEditing) * var(--scaleBelow850));
-      color: var(--accentColor);
-      transition: color .5s ease;
-  }
-  
-  /* cooking now */
-  li:nth-child(3){
-      font-size: calc(var(--cooking) * var(--scaleBelow850));
-      color: var(--fontColor);
-  }
-  
-  /* wordpress websites */
-  li:nth-child(4){
-      font-size: calc(var(--wordpress) * var(--scaleBelow850));
-      color: var(--accentColor);
-  }
-  
-  /* graphics */
-  li:nth-child(5){
-      font-size: calc(var(--graphics) * var(--scaleBelow850));
-      color: var(--accentColor);
-      margin-bottom: 10px;
-  }
-  
-  /* re-reding book */
-  li:nth-child(6){
-      font-size: calc(var(--streetLawyer) * var(--scaleBelow850));
-      color: var(--fontColor);
-  }
-  
-  
-  /* product photography */
-  li:nth-child(7){
-      font-size: calc(var(--productPhotog) * var(--scaleBelow850));
-      color: var(--accentColor);
-  }
-  
-  /* front-end */
-  li:nth-child(8){
-      font-size: calc(var(--frontEnd) * var(--scaleBelow850));
-      color: var(--accentColor);
-      margin-bottom: -8px;
-  }
-  
-  /* spreadsheet */
-  li:nth-child(9){
-      font-size: calc(var(--spreadSheet) * var(--scaleBelow850));
-      color: var(--accentColor);
-  }
-  
-  /* say hi! */
-  li:nth-child(10){
-      font-size: calc(var(--sayHi) * var(--scaleBelow850));
-      color: var(--fontColor);
-  }
-  
-  
-  }
 
-@media only screen and (max-width: 1340px) and (min-width: 958px) {
-
-     /* tim ronquillo */
-     li:nth-child(1){
-        font-size: calc(var(--timronquillo) * var(--scaleBelow1340));
-        margin-bottom: 8px;
-        color: var(--fontColor);
-    }
-    
-    /* video editing */
-    li:nth-child(2){
-        font-size: calc(var(--videoEditing) * var(--scaleBelow1340));
-        color: var(--accentColor);
-        transition: color .5s ease;
-    }
-    
-    /* cooking now */
-    li:nth-child(3){
-        font-size: calc(var(--cooking) * var(--scaleBelow1340));
-        color: var(--fontColor);
-    }
-    
-    /* wordpress websites */
-    li:nth-child(4){
-        font-size: calc(var(--wordpress) * var(--scaleBelow1340));
-        color: var(--accentColor);
-    }
-    
-    /* graphics */
-    li:nth-child(5){
-        font-size: calc(var(--graphics) * var(--scaleBelow1340));
-        color: var(--accentColor);
-        margin-bottom: 10px;
-    }
-    
-    /* re-reding book */
-    li:nth-child(6){
-        font-size: calc(var(--streetLawyer) * var(--scaleBelow1340));
-        color: var(--fontColor);
-    }
-    
-    
-    /* product photography */
-    li:nth-child(7){
-        font-size: calc(var(--productPhotog) * var(--scaleBelow1340));
-        color: var(--accentColor);
-    }
-    
-    /* front-end */
-    li:nth-child(8){
-        font-size: calc(var(--frontEnd) * var(--scaleBelow1340));
-        color: var(--accentColor);
-        margin-bottom: -8px;
-    }
-    
-    /* spreadsheet */
-    li:nth-child(9){
-        font-size: calc(var(--spreadSheet) * var(--scaleBelow1340));
-        color: var(--accentColor);
-    }
-    
-    /* say hi! */
-    li:nth-child(10){
-        font-size: calc(var(--sayHi) * var(--scaleBelow1340));
-        color: var(--fontColor);
-    }
-    
-}
 
 @media only screen and (max-width: 380px){
         /* re-reding book */
