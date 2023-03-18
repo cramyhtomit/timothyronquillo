@@ -168,20 +168,17 @@ section {
 }
 
 
-@media (max-width: 1320px){
-
-    
-
-
-}
-
 @media (max-width: 800px){
     #about {
         flex-direction: column;
     }
 
-    .container-fluid:nth-child(1){
-        margin-bottom: 2rem;
+    .container-fluid .text-center:nth-child(1){
+        margin-bottom: 5rem;
+    }
+
+    .container-fluid .text-center h1:nth-child(1){
+        margin-bottom: 0;
     }
 }
 
