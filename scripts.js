@@ -58,8 +58,13 @@ window.onload = function() {
     }, 2000);
 }
 
-
-setInterval(function(){
-
+var count = 0;
+let intervalID = setInterval(function(){     
     document.getElementById('pandaDown').style.transform = 'translateY(0px)';
-}, Math.floor(Math.random() * 3000) + 2000);   
+    count++;
+    console.log(count);
+    if (count > 3){
+        clearInterval(intervalID);
+    }
+}, Math.floor(Math.random() * 7000) + 4000);   
+

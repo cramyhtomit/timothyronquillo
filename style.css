@@ -7,6 +7,7 @@
     --accentColorChange: #F24C4C;
     --accentColor: #3A98B9;
 
+    /* Normal Size */
     --timronquillo: 4.1rem;
     --videoEditing: 4rem;
     --cooking: 2.05rem;
@@ -17,6 +18,9 @@
     --frontEnd: 5.4rem;
     --spreadSheet: 2.05rem;
     --sayHi: 7.5rem;
+
+    /* Less Than 1320px Size */
+    --scale-1320: 0.8;
     
     /* font-size: 40px; */
 }
@@ -35,6 +39,7 @@ h1 {
 ul {
     list-style: none;
     font-family: var(--headerFont);
+    padding: 0;
 }
 
 li {
@@ -176,4 +181,89 @@ section {
     transition: transform 1.5s ease; 
     transform: translateY(100px);
     /* display: none; */
+}
+
+
+@media (max-width: 1320px){
+
+    /* tim ronquillo */
+    li:nth-child(1){
+        font-size: calc(var(--timronquillo) * var(--scale-1320));
+        margin-bottom: 8px;
+        color: var(--fontColor);
+    }
+
+    /* video editing */
+    li:nth-child(2){
+        font-size: calc(var(--videoEditing) * var(--scale-1320));
+        color: var(--accentColor);
+        transition: color .5s ease;
+    }
+
+    /* cooking now */
+    li:nth-child(3){
+        font-size: calc(var(--cooking) * var(--scale-1320));
+        color: var(--fontColor);
+    }
+
+    /* wordpress websites */
+    li:nth-child(4){
+        font-size: calc(var(--wordpress) * var(--scale-1320));
+        color: var(--accentColor);
+    }
+
+    /* graphics */
+    li:nth-child(5){
+        font-size: calc(var(--graphics) * var(--scale-1320));
+        color: var(--accentColor);
+        margin-bottom: 10px;
+    }
+
+
+
+
+    /* re-reding book */
+    li:nth-child(6){
+        font-size: calc(var(--streetLawyer) * var(--scale-1320));
+        color: var(--fontColor);
+    }
+
+
+    /* product photography */
+    li:nth-child(7){
+        font-size: calc(var(--productPhotog) * var(--scale-1320));
+        color: var(--accentColor);
+    }
+
+    /* front-end */
+    li:nth-child(8){
+        font-size: calc(var(--frontEnd) * var(--scale-1320));
+        color: var(--accentColor);
+        margin-bottom: -8px;
+    }
+
+    /* spreadsheet */
+    li:nth-child(9){
+        font-size: calc(var(--spreadSheet) * var(--scale-1320));
+        color: var(--accentColor);
+    }
+
+    /* say hi! */
+    li:nth-child(10){
+        font-size: calc(var(--sayHi) * var(--scale-1320));
+        color: var(--fontColor);
+    }
+
+
+
+}
+
+@media (max-width: 800px){
+    #about {
+        flex-direction: column;
+    }
+
+    .container-fluid:nth-child(1){
+        margin-bottom: 2rem;
+    }
 }
