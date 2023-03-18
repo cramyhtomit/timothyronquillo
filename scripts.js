@@ -86,5 +86,5 @@ function randomKulit(){
     } else {
         document.getElementById('pandaUp').style.transform = 'translateY(0px)';
     }
-    alert(pandaSwitch);
+    // alert(pandaSwitch);
 }
