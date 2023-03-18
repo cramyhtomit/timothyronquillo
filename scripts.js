@@ -17,6 +17,7 @@ document.getElementById('pandaDown').addEventListener('mouseenter', function() {
     this.style.transform = 'translateY(100px)';
     // this.style.display = 'none';
     this.style.transition = 'transform .5s ease';
+    // this.style.cursor = '-webkit-grab, grab';
 
     document.getElementById('me').style.opacity = 0;
     document.getElementById('about').style.opacity = 1;
@@ -56,3 +57,9 @@ window.onload = function() {
         document.getElementById('pandaDown').style.transform = 'translateY(0px)';               
     }, 2000);
 }
+
+
+setInterval(function(){
+
+    document.getElementById('pandaDown').style.transform = 'translateY(0px)';
+}, Math.floor(Math.random() * 3000) + 2000);   
