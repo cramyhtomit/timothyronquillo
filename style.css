@@ -20,7 +20,7 @@
     --sayHi: 7.5rem;
 
     /* Less Than 1320px Size */
-    --scaleBelow600: 0.3;
+    --scaleBelow600: 0.5;
     
     /* font-size: 40px; */
 }
@@ -187,7 +187,74 @@ section {
 
 
 /* Extra small devices (phones, 600px and down) */
-
+@media only screen and (max-width: 600px) {
+    /* tim ronquillo */
+    li:nth-child(1){
+      font-size: calc(var(--timronquillo) * var(--scaleBelow600));
+      margin-bottom: 8px;
+      color: var(--fontColor);
+  }
+  
+  /* video editing */
+  li:nth-child(2){
+      font-size: calc(var(--videoEditing) * var(--scaleBelow600));
+      color: var(--accentColor);
+      transition: color .5s ease;
+  }
+  
+  /* cooking now */
+  li:nth-child(3){
+      font-size: calc(var(--cooking) * var(--scaleBelow600));
+      color: var(--fontColor);
+  }
+  
+  /* wordpress websites */
+  li:nth-child(4){
+      font-size: calc(var(--wordpress) * var(--scaleBelow600));
+      color: var(--accentColor);
+  }
+  
+  /* graphics */
+  li:nth-child(5){
+      font-size: calc(var(--graphics) * var(--scaleBelow600));
+      color: var(--accentColor);
+      margin-bottom: 10px;
+  }
+  
+  /* re-reding book */
+  li:nth-child(6){
+      font-size: calc(var(--streetLawyer) * var(--scaleBelow600));
+      color: var(--fontColor);
+  }
+  
+  
+  /* product photography */
+  li:nth-child(7){
+      font-size: calc(var(--productPhotog) * var(--scaleBelow600));
+      color: var(--accentColor);
+  }
+  
+  /* front-end */
+  li:nth-child(8){
+      font-size: calc(var(--frontEnd) * var(--scaleBelow600));
+      color: var(--accentColor);
+      margin-bottom: -8px;
+  }
+  
+  /* spreadsheet */
+  li:nth-child(9){
+      font-size: calc(var(--spreadSheet) * var(--scaleBelow600));
+      color: var(--accentColor);
+  }
+  
+  /* say hi! */
+  li:nth-child(10){
+      font-size: calc(var(--sayHi) * var(--scaleBelow600));
+      color: var(--fontColor);
+  }
+  
+  
+  }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
