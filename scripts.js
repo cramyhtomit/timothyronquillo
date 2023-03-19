@@ -1,6 +1,6 @@
 
 document.getElementById('pandaDown').addEventListener('mouseenter', function() {
-    // this.style.transform = 'translateY(100px)';
+    this.style.transform = 'translateY(100px)';
     this.style.transition = 'transform .5s ease';
 
     document.getElementById('me').style.opacity = 0;
@@ -10,7 +10,7 @@ document.getElementById('pandaDown').addEventListener('mouseenter', function() {
 });
 
 document.getElementById('pandaDown').addEventListener('mousedown', function() {
-    // this.style.transform = 'translateY(100px)';
+    this.style.transform = 'translateY(100px)';
     this.style.transition = 'transform .5s ease';
 
     document.getElementById('me').style.opacity = 0;
@@ -72,9 +72,6 @@ window.onload = function() {
         randomKulit();
         count++;
         console.log(count);
-        // if (count > 3){
-        //     clearInterval(intervalID);
-        // }
     }, Math.floor(Math.random() * 3000) + 1000);   
 
 
@@ -89,5 +86,4 @@ function randomKulit(){
     } else {
         document.getElementById('pandaUp').style.transform = 'translateY(0px)';
     }
-    // alert(pandaSwitch);
 }

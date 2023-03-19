@@ -56,9 +56,6 @@ ul:hover {
     cursor: default;
 }
 
-
-
-
 a {
     text-decoration: none;
     color: var(--textFont);
@@ -74,6 +71,10 @@ a {
     transition: opacity .5s ease-in-out .5s;
     z-index: 2;
     opacity: 0;
+}
+
+*:hover {
+    cursor: default;
 }
 
 #me {
@@ -96,7 +97,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    width: 100;
+    width: 100vw;
 
 }
 
@@ -124,6 +125,8 @@ section {
     animation-iteration-count: infinite;
     visibility: hidden;
   }
+
+
   
 @keyframes shake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
