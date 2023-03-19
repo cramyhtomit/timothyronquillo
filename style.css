@@ -143,8 +143,8 @@ section:nth-of-type(2) {
     background-color: #eee;
     border-radius: 5px;
     z-index: 100000;
-    transform: translateY(-100vh);
-    transition: transform .5s ease-in, opacity .5s ease;
+    transform: translateY(-500px);
+    transition: transform .5s ease-in-out, opacity .5s ease;
 }
 
 .popup.active {
