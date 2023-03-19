@@ -66,17 +66,19 @@ window.onload = function() {
         document.getElementById('pandaDown').style.transform = 'translateY(0px)';       
         document.getElementById('pokeMe').style.visibility = 'visible';
     }, 2000);
-}
 
-var count = 0;
-let intervalID = setInterval(function(){     
-    randomKulit();
-    count++;
-    console.log(count);
-    // if (count > 3){
-    //     clearInterval(intervalID);
-    // }
-}, Math.floor(Math.random() * 3000) + 1000);   
+    var count = 0;
+    let intervalID = setInterval(function(){     
+        randomKulit();
+        count++;
+        console.log(count);
+        // if (count > 3){
+        //     clearInterval(intervalID);
+        // }
+    }, Math.floor(Math.random() * 3000) + 1000);   
+
+
+}
 
 
 
