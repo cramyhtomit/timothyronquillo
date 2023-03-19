@@ -87,3 +87,17 @@ function randomKulit(){
         document.getElementById('pandaUp').style.transform = 'translateY(0px)';
     }
 }
+
+
+document.getElementById('sayHi').addEventListener('click', function() {
+    document.querySelector('.popup').classList.add('active');
+    document.getElementById('about').style.filter = 'blur(5px) grayscale(1)';
+    document.getElementById('about').style.transition = 'filter 1s ease';
+
+});
+
+document.querySelector('.close-btn').addEventListener('click', function() {
+    document.querySelector('.popup').classList.remove('active');
+    document.getElementById('about').style.filter = 'blur(0) grayscale(0)';
+    document.getElementById('about').style.transition = 'filter 1s ease';
+});
