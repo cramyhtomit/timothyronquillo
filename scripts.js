@@ -63,7 +63,8 @@ for ( i = 0; i < listItem.length; i++){
 
 window.onload = function() {
     setTimeout(function() {
-        document.getElementById('pandaDown').style.transform = 'translateY(0px)';               
+        document.getElementById('pandaDown').style.transform = 'translateY(0px)';       
+        document.getElementById('pokeMe').style.visibility = 'visible';
     }, 2000);
 }
 
