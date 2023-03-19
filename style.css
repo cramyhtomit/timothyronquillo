@@ -65,7 +65,6 @@ a {
 }
 
 #imAnIntrovert {
-    /* font-size: 20px; */
     opacity: 0;
     transition: opacity .5s ease-in 1.5s;
 }
@@ -157,6 +156,7 @@ li:nth-child(2){
     font-size: var(--videoEditing);
     color: var(--accentColor);
     transition: color .5s ease;
+    margin-bottom: 5px;
 }
 
 /* cooking now */
@@ -175,7 +175,7 @@ li:nth-child(4){
 li:nth-child(5){
     font-size: var(--graphics);
     color: var(--accentColor);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 /* re-reding book */
@@ -293,11 +293,13 @@ li:nth-child(10){
   /* graphics */
   li:nth-child(5){
       font-size: calc(var(--graphics) * var(--scaleBelow850));
+      margin-bottom: 10px;
   }
   
   /* re-reding book */
   li:nth-child(6){
       font-size: calc(var(--streetLawyer) * var(--scaleBelow850));
+      margin-bottom: 5px;
   }
   
   
@@ -320,6 +322,10 @@ li:nth-child(10){
   /* say hi! */
   li:nth-child(10){
       font-size: calc(var(--sayHi) * var(--scaleBelow850));
+  }
+
+  #imAnIntrovert {
+    font-size: 10px;
   }
   
   
