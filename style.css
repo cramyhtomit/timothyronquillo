@@ -197,6 +197,7 @@ section:nth-of-type(2) {
 
 .popup textarea {
     width: 90%;
+    /* height: 1rem; */
     outline: none;
     border: none;
     resize: none;
@@ -330,6 +331,7 @@ li:nth-child(9){
 li:nth-child(10){
     font-size: var(--sayHi);
     color: var(--fontColor);
+    cursor: pointer;
 }
 
 
