@@ -60,6 +60,7 @@ for ( i = 0; i < listItem.length; i++){
 
 }
 
+var intervalID;
 
 window.onload = function() {
     setTimeout(function() {
@@ -68,7 +69,7 @@ window.onload = function() {
     }, 2000);
 
     var count = 0;
-    let intervalID = setInterval(function(){     
+    intervalID = setInterval(function(){     
         randomKulit();
         count++;
         console.log(count);
@@ -90,6 +91,9 @@ function randomKulit(){
 
 
 document.getElementById('sayHi').addEventListener('click', function() {
+    clearInterval(intervalID);
+    document.getElementById('pandaDown').style.transform = 'translateY(100px)';
+    document.getElementById('pandaUp').style.transform = 'translateY(-100px)';
     document.querySelector('.popup').classList.add('active');
     document.getElementById('about').style.filter = 'blur(5px) grayscale(1)';
     document.getElementById('about').style.transition = 'filter 1s ease-in-out';
@@ -100,4 +104,15 @@ document.querySelector('.close-btn').addEventListener('click', function() {
     document.querySelector('.popup').classList.remove('active');
     document.getElementById('about').style.filter = 'blur(0) grayscale(0)';
     document.getElementById('about').style.transition = 'filter 1s ease-in-out';
+    document.getElementById('blackPanda').style.visibility = 'hidden';
+});
+
+document.querySelector('.close-btn').addEventListener('mouseenter', function() {
+    document.getElementById('blackPanda').style.top = '-18%';
+    document.getElementById('blackPanda').style.visibility = 'visible';
+    
+});
+
+document.querySelector('#send').addEventListener('mouseenter', function() {
+    document.getElementById('blackPanda').style.top = '0%';
 });
