@@ -387,6 +387,11 @@ li:nth-child(10){
    li:nth-child(10){
        font-size: calc(var(--sayHi) * var(--scaleBelow1340));
    }
+
+   .popup {
+    width: 400px;
+  }
+  
    
 }
 
@@ -450,7 +455,14 @@ li:nth-child(10){
   #imAnIntrovert {
     font-size: 10px;
   }
+
+  .popup {
+    width: 300px;
+  }
   
+  #blackPanda {
+    left: 60%;
+  }
   
   }
 
