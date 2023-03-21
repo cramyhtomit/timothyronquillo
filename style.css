@@ -68,10 +68,12 @@ a {
 
 
 #about {
-    transition: opacity .5s ease-in-out .5s;
+    transition: all 1s cubic-bezier(.1,1.19,.52,.68) .5s;
     z-index: 2;
     opacity: 0;
+    transform: translateY(1000px);
 }
+
 
 *:hover {
     cursor: default;
@@ -88,6 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
 
   }
   
@@ -160,12 +163,13 @@ section:nth-of-type(2) {
     border-radius: 5px;
     z-index: 4;
     transform: translateY(-500px);
-    transition: transform .5s ease-in-out, opacity .5s ease;
+    transition: transform .5s cubic-bezier(.1,1.19,.52,.68), opacity .5s ease;
 }
 
 .popup.active {
     transform: translateY(0);
     opacity: 1;
+    /* transition: transform 1s ; */
 }
 
 .form-element {
